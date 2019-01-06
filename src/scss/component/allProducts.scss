@@ -1,0 +1,254 @@
+@import"header.scss";
+@import"footer.scss";
+#middle{
+    width: 1200px;
+    min-height: 1981px;
+    border:1px solid  dodgerblue;
+    margin: 30px auto;
+    font-size: 14px;
+   
+}
+#breadcrumbs{
+    margin-bottom: 35px;
+}
+#middle .crumbs-ul{
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    line-height: 30px;
+}
+#middle .crumbs-ul li:nth-child(1){
+    width: 60px;
+
+}
+#middle .crumbs-ul li:nth-child(2){
+    width: 28px;
+    
+}
+#middle .crumbs-ul li:nth-child(1) a{
+    color: #777;
+    margin-right: 15px;
+}
+#middle .crumbs-ul li:nth-child(2) a{
+    color: black;
+}
+//main展示区
+.main .main-left{
+    width: 262.5px;
+    height: 1951px;
+    float: left;
+    border:1px solid greenyellow ;
+}
+.main .main-right{
+    width: 877.5px;
+    height: 1951px;
+    float: right;
+    border:1px solid #e5e5e5 ;
+}
+.layer-category{
+    height: 435px;
+}
+.category-title{
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 500;
+}
+.category-content{
+    height: 390px;
+    li{
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    a{
+        color: #444;
+    }
+}
+//艺术家边栏
+.sider-artists{
+    margin-top:20px ;
+    height: 376px;
+    border-bottom: 1px solid #e8e8e8;
+
+}
+.sider-artists-title{
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 500;
+}
+.sider-artists-content{
+    height: 300px;
+    overflow: auto;
+    li{
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    a{
+        color: #444;
+    }
+}
+//品牌边栏
+.sider-brands{
+    margin-top:20px ;
+    height: 376px;
+    border-bottom: 1px solid #e8e8e8;
+
+}
+.sider-brands-title{
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 500;
+}
+.sider-brands-content{
+    height: 300px;
+    overflow: auto;
+    li{
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    a{
+        color: #444;
+    }
+}
+//颜色边栏
+.sider-colors{
+    height: 108px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.sider-colors-title{
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.sider-colors-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 45px;
+    margin-bottom: 30px;
+}
+.sider-colors-content li a{
+    display: block;
+    width:25px ;
+    height: 25px;
+    border-radius: 50%;
+}
+.sider-colors-content li:nth-child(1) a{
+    background-color: #00a742;
+}
+.sider-colors-content li:nth-child(2) a{
+    background-color: black;
+}
+.sider-colors-content li:nth-child(3) a{
+    background-color: gold;
+}
+.sider-colors-content li:nth-child(4) a{
+    background-color: lawngreen;
+}
+.sider-colors-content li:nth-child(5) a{
+    background-color: deeppink;
+}
+//右边内容部分
+.pager{
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+.sort-list{
+    width: 144px;
+    height: 26px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sort-list li:nth-child(1){
+    width:69px ;
+    border-right: 1px solid #e5e5e5;
+        background: #00c8c8;
+}
+.sort-list li:nth-child(2){
+    width:36px ;
+    border-right: 1px solid #e5e5e5;
+}
+.sort-list li:nth-child(3){
+    width:34px ;
+}
+.sort-list a{
+    display: block;
+    height: 100%;
+    line-height: 26px;
+}
+.sort-list li:nth-child(3) a{
+    color: black;
+}
+.sort-list li:nth-child(2) a{
+    color: black;
+}
+.sort-list li:nth-child(1) a{
+    color: white;
+}
+.limiter{
+        border: 1px solid #e5e5e5;
+        width: 100px;
+        height: 26px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: #666;
+        }
+        span{
+            display: inline-block;
+            height: 100%;
+            line-height: 26px;
+        }
+        ul{
+            position: absolute;
+            top: 26px;
+            z-index: 10;
+            border:1px solid #e5e5e5;
+            display: none;
+            li:nth-child(1){
+                text-align: center;
+                width: 100px;
+                height: 18px;
+                line-height: 18px;
+                border-bottom:1px solid  #e5e5e5;
+            }
+            li:nth-child(2){
+            text-align: center;
+                width: 100px;
+                height: 18px;
+                line-height: 18px;
+                border-bottom:1px solid  #e5e5e5;
+            }
+            li:nth-child(3){
+            text-align: center;
+                width: 100px;
+                height: 18px;
+                line-height: 18px;
+
+            }
+        }
+}

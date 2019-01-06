@@ -1,0 +1,246 @@
+@import "component/header.scss";
+@import"component/footer.scss";
+.middle{
+    width: 1200px;
+    min-height: 800px;
+    margin: 20px auto;
+}
+#banner{
+    display: flex;
+    width: 1200px;
+    height: 556px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+#banner .banner-autoPlay{
+    width: 800px;
+    height: 556px;
+    float: left;
+    background-color: black;
+    overflow: hidden;
+}
+//轮播图部分
+.banner-autoPlay {position:relative;}
+.banner-autoPlay ul{position: absolute;left: 0;top: 0;}
+.banner-autoPlay ul li{ height: 556px;float: left;}
+
+.banner-autoPlay ol {position:absolute;right:0;bottom: 10px;z-index:6}
+.banner-autoPlay ol li{width: 20px;height: 20px;background: #fff;margin-left: 5px;line-height: 20px;text-align: center;cursor: pointer;}
+.banner-autoPlay ol li.ac{background: red;color: #fff;}
+.banner-autoPlay>a{display: block; text-decoration: none;position: absolute;top: 50%;margin-top: -10px;height: 40px;line-height: 32px;text-align: center;width: 40px;font-size: 40px;vertical-align: middle;color: #fff;background: rgba(0,0,0,0.5);z-index:6;}
+#goPrev{left: 0;}
+#goNext{right: 0;}
+.banner-autoPlay img{    
+    width: 800px;
+    height: 556px;
+    }
+.banner-right{
+    width: 380px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.banner-right-a1{
+    display: block;
+    width: 100%;
+    height: 264px;
+}
+.banner-right-a1 img{
+        
+        width: 100%;
+    }
+
+.banner-right-a2{
+    display: block;
+    width: 100%;
+    height: 270px;
+}
+.banner-right-a2 img{
+        width: 100%;
+    }
+//新品专区
+.new-arrival-container{
+        width: 1200px;
+        height: 306px;
+        margin: 0 auto;
+        margin-bottom:30px ;
+        background-color: greenyellow;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+}
+
+//补充产品
+.additional-a{
+    width: 1200px;
+    height: 306px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    img{
+        width: 585px;
+    }
+    img:hover{
+        opacity: 0.7;
+    }
+}
+.additional-b{
+    width: 1200px;
+    height: 306px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    img{
+        width: 390px;
+    }
+    img:hover{
+        opacity: 0.7;
+    }
+}
+//艺术家列表
+.artists{
+    display: flex;
+    flex-direction: column;
+
+    width: 1200px;
+    height: 330px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    .artists-menu{
+        height: 40px;
+        line-height: 40px;
+        border-bottom:2px solid #ababab ;
+        box-sizing: border-box;
+        padding-right: 5px;
+        h3{
+          float: left; 
+          color: #545454; 
+        }
+        a{
+           display: block;
+           float: right;
+           color: #ababab;
+        }
+    }
+}
+.artists-content{
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0 50px ;
+}
+#artists-btn-info-left{
+    font-size: 50px;
+    position: absolute;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    top: 140px;
+    left: 0;
+}
+#artists-btn-info-right{
+    position: absolute;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    top: 140px;
+    height: 50px;
+    width: 50px;
+    left: 1150px;
+}
+.artists-ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    li{
+        width: 180px;
+        height: 180px;
+        border-radius:50% ;
+        overflow: hidden;
+    }
+    img{
+        width:180px ;
+        height: 180px;
+    }
+}
+//品牌列表
+.brands{
+    display: flex;
+    flex-direction: column;
+
+    width: 1200px;
+    height: 330px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    .brands-menu{
+        height: 40px;
+        line-height: 40px;
+        border-bottom:2px solid #ababab ;
+        box-sizing: border-box;
+        padding-right: 5px;
+        h3{
+          float: left; 
+          color: #545454; 
+        }
+        a{
+           display: block;
+           float: right;
+           color: #ababab;
+        }
+    }
+}
+.brands-content{
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0 50px ;
+}
+#brands-btn-info-left{
+    font-size: 50px;
+    position: absolute;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    top: 140px;
+    left: 0;
+}
+#brands-btn-info-right{
+    position: absolute;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    top: 140px;
+    height: 50px;
+    width: 50px;
+    left: 1150px;
+}
+.brands-ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    li{
+        width: 180px;
+        height: 180px;
+        border-radius:50% ;
+        overflow: hidden;
+    }
+    img{
+        width:180px ;
+        height: 180px;
+    }
+}

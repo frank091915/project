@@ -1,0 +1,112 @@
+.footer-wraper{
+    width: 1200px;
+    height: 417px;
+    margin: 0 auto;
+
+}
+.footer-wraper .fw-top{
+    height: 315px;
+    background-color: black;
+    position: relative;
+    box-sizing: border-box;
+    padding:0 15px;
+}
+.footer-wraper .fw-bottom{
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.footer-wraper .fw-top .fw-top-logo{
+        position: relative;
+    width: 1110px;
+    height: 106px;
+}
+
+.footer-wraper .fw-top .fw-top-logo .line{
+    width: 1145px;
+    height: 1px;
+    background-color: #4d4d4d;
+    position: absolute;
+    margin-left: 25px;
+    top: 50%;
+}
+.footer-wraper .fw-top .fw-top-logo .logo-wrap{
+    width: 142px;
+    height: 56px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-color: black;
+    img{
+        width: 100px;
+        position: absolute;
+        left: 142px;
+    }
+}
+.footer-wraper .fw-top .fw-top-logo .logo-wrap i{
+    color:#b7b7b7;
+    display: block;
+    font-size: 28px;
+}
+//top下班部分
+.footer-wraper .fw-top-info{
+    margin-top: 16px;
+    width: 1140px;
+    height: 200px;
+
+}
+
+.footer-wraper .fw-top .fw-top-info .fw-addres{
+    width: 380px;
+    height: 144px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    overflow: hidden;
+    float: left;
+    color: #b7b7b7;
+}
+.footer-wraper .fw-top .fw-top-info .fw-addres h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.footer-wraper .fw-top .fw-top-info .fw-addres p{
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.footer-wraper .fw-top .fw-top-info .fw-ulWraper{
+    width: 760px;
+    height: 167px;
+    float: right;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-wraper .fw-top .fw-top-info .fw-ulWraper ul li{
+    font-size: 13px;
+    margin-bottom: 5px;
+    a{
+        color: #b7b7b7;
+    }
+    a:hover{
+        color: white;
+    }
+}
+.footer-wraper .fw-top .fw-top-info .fw-ulWraper ul .firstLi{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.fw-bottom .fw-bottom-wraper a{
+    color: #00c8c8;
+}

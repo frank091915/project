@@ -1,0 +1,73 @@
+@import "header.scss";
+@import "footer.scss";
+.middle{
+    width: 1200px;
+    min-height: 510px;
+    margin: 20px auto;
+    background: url(/static/images/login-bg.jpg);
+    background-image: 510px;
+}
+.header_wraper2 .hide_wraper{
+    color: deepskyblue!important; 
+}
+.header_wraper2 .hide_wraper p{
+    font-size: 18px;
+}
+.header_wraper2 .hide_wraper a{
+    color: deepskyblue!important;
+    font-size: 15px;
+}
+.middle-wraper{
+    display: flex;
+    width: 390px;
+    height: 436px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px 30px 30px 30px;
+}
+.modal-content{
+    width: 300px;
+    margin: 200px auto;
+        background-color: rgba(255, 255, 255, 0.9);
+}
+#modal-body{
+    height: 300px !important;
+    display: flex;
+}
+#signIn{
+    display: none;
+}
+#signIn-form{
+    width: 298px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#signIn-form input{
+    width: 220px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(250, 255, 189) !important;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.modal-footer button{
+    background-color: #00c8c8;
+    color: #fff;
+    border: none;
+}
+.signInInfo1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.signInInfo1{
+    width: 220px;
+    height: 30px;
+}
+.signInInfo2{
+    color: #999;
+    font-size: 13px;
+}
