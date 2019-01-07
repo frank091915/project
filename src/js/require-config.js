@@ -7,7 +7,6 @@ require.config({
 		"header":"/js/component/header",
 		"footer":"/js/component/footer",
 		"bootstrap":"/libs/bootstrap/js/bootstrap",
-		"allProducts":"/js/component/allProducts"
 	},
 	shim:{
 		"cookie":{

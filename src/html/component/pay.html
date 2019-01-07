@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/component/pay.css"/>
+		<link rel="stylesheet" type="text/css" href="/font/iconfont.css"/>
+		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/component/pay.js">
+			
+		</script>
+	</head>
+	<body>
+		<header></header>
+		<div class="pay-wraper">
+			<div class="pay-title">
+				填写并核对订单信息
+				<div class="is-login">
+					已注册？<a href="javascript:;">请登录</a>
+				</div>
+			</div>
+			<div class="pay-content">
+				<form>
+					<div class="pay-username">
+	                    <label for="username">
+	                        	<span>收货人 </span><em>*</em>
+	                    </label>
+	                    <input id="username" class="pay-content-input " type="text" value="" name="username" >
+
+                	</div>
+                	<div class="pay-e-mail">
+	                    <label for="e-mail">
+	                        	<span>电子邮件 </span><em>*</em>
+	                    </label>
+	                    <input id="e-mail" class="pay-content-input " type="text" value="" name="e-mail" >
+
+                	</div>
+                	<div class="pay-phone-number">
+	                    <label for="phone-number">
+	                        	<span>手机号码</span><em>*</em>
+	                    </label>
+	                    <input id="phone-number" class="pay-content-input " type="text" value="" name="phone-number" >
+
+                	</div>
+                	<div class="pay-addres">
+	                    <label for="pay-addres">
+	                        	<span>地址</span><em>*</em>
+	                    </label>
+	                    <input id="pay-addres" class="pay-content-input " type="text" value="" name="pay-addres" >
+
+                	</div>
+                	<div class="pay-method">
+                		<p>支付方式</p>
+                		<div class="pay-method-choice">
+                			<div class="pay-method-choice1">
+                				
+                				<span class="weixin-pay"></span><span>微信</span>
+                			</div>
+                			<div class="pay-method-choice2">
+                				<span class="ali-pay"></span><span>支付宝</span>
+                			</div>                			
+                		</div>
+                	</div>
+                	<ul class="invoice-info">
+                		<li>发票信息</li>
+                		<li><input type="radio"  name="invoice-type" checked="checked"/>个人</li>
+                		<li><input type="radio" name="invoice-type"/>公司</li>
+                		<li>
+                            <span id="neirong">内容</span>
+                            <select name="invoice_detail" class="invoice_detail">
+                                <option value="0">明细</option>
+                                <option value="1">数码产品</option>
+                                <option value="2">工艺美术品</option>
+                                <option value="3">金银首饰</option>
+                                <option value="4">家具</option>
+                                <option value="5">家居用品</option>
+                                <option value="6">日用品</option>
+                            </select>
+                		</li>
+                	</ul>
+                	<div class="review">
+                		<h3>发货清单</h3>
+                		
+                		<table class="review-table">
+							<thead>
+								<tr>
+									<th>图片</th>
+									<th>商品名称</th>
+									<th>价格</th>
+									<th>数量</th>
+									<th>小计</th>
+								</tr>				
+							</thead>
+			
+						</table>
+						<div class="review-info-wraper">
+							<div class="review-info-cell"><a href="javascript:;"><img src="/static/images/1_40_48.jpg"/></a></div>
+							<div class="review-info-cell"><span class="review-info-name">酒红色边鸟笼伞</span></div>
+							<div class="review-info-cell"><span class="review-info-price">¥&nbsp;399.00</span></div>
+							<div class="review-info-cell"><span class="cart-quantity-box-number">1</span></div>
+							<div class="review-info-cell"><span class="review-info-price">¥&nbsp;399.00</span></div>
+						</div>
+                		<div class="pay-totals">
+                			<div class="pay-totals-wraper">
+                				<span>总计</span><span>¥&nbsp;339</span>                				
+                			</div>
+                		</div>
+                		<div class="submt-box">
+                			<div class="submit-box-wraper">
+                				<button>提交订单</button>
+                			</div>
+                		</div>
+                	</div>
+				</form>
+			</div>
+		</div>
+
+		<footer></footer>
+	</body>
+</html>

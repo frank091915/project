@@ -3,7 +3,56 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/component/cart.css"/>
+		<link rel="stylesheet" type="text/css" href="/font/iconfont.css"/>
+		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/component/cart.js">
+			
+		</script>
 	</head>
 	<body>
+		<header>
+			
+		</header>
+		<div class="cart">
+			<h1>购物车</h1>	
+			<table class="cart-table">
+				<thead>
+					<tr>
+						<th>图片</th>
+						<th>商品名称</th>
+						<th>单价</th>
+						<th>数量</th>
+						<th>小计</th>
+						<th>操作</th>	
+					</tr>				
+				</thead>
+
+			</table>
+				<div class="cart-info-wraper">
+					<div class="cart-info-cell"><a href="javascript:;"><img src="/static/images/1_40_48.jpg"/></a></div>
+					<div class="cart-info-cell"><span class="cart-product-name">酒红色边鸟笼伞</span></div>
+					<div class="cart-info-cell"><span class="cart-product-price">¥&nbsp;399.00</span></div>
+					<div class="cart-info-cell"><div class="cart-quantity-box"><span>-</span><span class="cart-quantity-box-number">1</span><span>+</span></div></div>
+					<div class="cart-info-cell"><span class="cart-price">¥&nbsp;399.00</span></div>
+					<div class="cart-info-cell"><div><span class="cart-collect">搜藏</span><span class="cart-delete">删除</span></div></div>
+				</div>
+			<div class="totals">
+				<div class="totals-left">
+					继续购物
+				</div>
+				<div class="totals-right">
+					<div class="totals-right-table">
+						<p><span>小结</span><span>¥&nbsp;399.00</span></p>
+						<p><span>总计</span><span>¥&nbsp;399.00</span></p>
+					</div>
+					<div class="pay">
+						立即结算
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			
+		</footer>
 	</body>
 </html>

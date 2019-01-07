@@ -1,0 +1,171 @@
+@import"header.scss";
+@import"footer.scss";
+.cart{
+    width:1200px;
+    height: 512px;
+    margin:30px auto ;
+    h1{
+        font-weight: 500;
+        font-size: 24px;
+        height: 24px;
+        line-height: 24px;
+        margin-bottom: 38px;
+        box-sizing: border-box;
+        padding-left: 20px;
+    }
+    .cart-table{
+        display: block;
+        height: 40px;
+        width: 1200px;
+        background-color: #e5e5e5;
+        thead{
+            font-size: 14px;
+
+            height: 40px;
+
+            th:nth-child(1){
+                  width:185px ;
+                  height: 40px;
+                  font-weight: normal;
+            }
+            th:nth-child(2){
+                  width:334px ;
+                  height: 40px;
+                  font-weight: normal;
+            }
+            th:nth-child(3){
+                  width:164px ;
+                  height: 40px;
+                  font-weight: normal;
+            }
+            th:nth-child(4){
+                  width:210px ;
+                  height: 40px;
+                  font-weight: normal;
+            }
+            th:nth-child(5){
+                  width:120px ;
+                  height: 40px;
+                  font-weight: normal;
+            }
+            th:nth-child(6){
+                  width:146px ;
+                  height: 40px;
+                  font-weight: normal;
+            }
+        }
+
+        
+    }
+}
+
+        .cart-info-wraper{
+            height: 128px;
+            text-align: center;
+            height: 128px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            border: 1px solid #e5e5e5;
+            .cart-info-cell:nth-child(1){
+                  width:185px ;
+                  height: 128px!important;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  a{
+                      display: block;
+                  }
+                  img{
+                  width:80px ;
+                  height: 80px;                      
+                  }
+            }
+            .cart-info-cell:nth-child(2){
+                  width:334px ;
+                  height: 128px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+            }
+            .cart-info-cell:nth-child(3){
+                  width:164px ;
+                  height: 128px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+            }
+            .cart-info-cell:nth-child(4){
+                  width:210px ;
+                  height: 128px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  .cart-quantity-box{
+                      border: 1px solid #e5e5e5;
+                      width: 110px;
+                      height: 40px;
+                      margin: 0 auto;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-around;
+                      align-items: center;
+                      span{
+                          display: block;
+                      }
+                  }
+            }
+            .cart-info-cell:nth-child(5){
+                  width:120px ;
+                  height: 128px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+            }
+            .cart-info-cell:nth-child(6){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width:146px ;
+                height: 128px;
+                span{
+                    margin-right:5px ;
+                }
+            }
+        }
+.totals{
+    box-sizing: border-box;
+    padding: 0 20px;
+    padding-top: 20px;
+    width: 1200px;
+    height: 235px;   
+    margin: 0 auto; 
+    .totals-left{
+        float: left;
+    }
+    .totals-right{
+        float: right;
+        width: 300px;
+        height: 221px;
+    }
+}
+.totals-right-table{
+    height: 84px;
+    p{
+        font-size: 16px;
+        height: 42px;
+        box-sizing: border-box;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.pay{
+    height: 47px;
+    background-color:#00c8c8 ;
+    color: white;
+    line-height: 47px;
+    text-align: center;
+}
