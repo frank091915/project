@@ -17,35 +17,36 @@
 		<div class="middle">
 			<div class="middle-wraper">
 				<!--登录框-->
-				<button id="signIn" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-					  
-					</button>
-					
-					<!-- Modal -->
-					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-show="true">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title" id="myModalLabel">欢迎您的加入</h4>
-					      </div>
-					      <div class="modal-body" id="modal-body">
-					        <form id="signIn-form">
-					        	<input type="text" class="password" placeholder="手机号或邮箱"/>
-					        	<input type="text" class="username" placeholder="用户名"/>
-					        	<input type="text" class="password" placeholder="密码"/>
-
-					        	<div class="signInInfo2"><span>加入我们，即可开始享受不一样的生活</span></div>
-					        </form>
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">确认注册</button>
-					        <button type="button" class="btn btn-primary">立即登录</button>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-					
+				<form id="demo" autocomplete="off">
+				    <p>
+				        <span class="tip">用户名：</span>
+				        <input type="text" name="username" class="plugin-input">
+				    </p>
+				    <p class="prompot"></p>
+				    <p>
+				        <span class="tip">密码：</span>
+				        <input type="password" name="password" id="password" class="plugin-input">
+				    </p>
+				    <p class="prompot"></p>
+				    <p>
+				        <span class="tip">确认密码：</span>
+				        <input type="password" name="password2" class="plugin-input">
+				    </p>
+				    <p class="prompot"></p>
+				    <p>
+				        <span class="tip">手机号码：</span>
+				        <input type="text" name="tel" class="tel" class="plugin-input">
+				    </p>
+				    <p class="prompot"></p>
+				    <p>
+				        <span class="tip">性别：</span>
+				        <input type="radio" name="sex" vlaue="1"><span class="radioSpan">男</span>
+				        <input type="radio" name="sex" vlaue="2"><span class="radioSpan">女</span>
+				    </p>
+				    <p class="prompot"></p>
+				    <p class="prompot"></p>
+				    <button>确认</button>
+				</form>	
 					
 			</div>
 		</div>

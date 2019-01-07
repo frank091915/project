@@ -7,12 +7,20 @@ require.config({
 		"header":"/js/component/header",
 		"footer":"/js/component/footer",
 		"bootstrap":"/libs/bootstrap/js/bootstrap",
+		"demo":"/libs/jquery/jquery-plugins/demo",
+		"validate":"/libs/jquery/jquery-plugins/validate-1.14.0.min"
 	},
 	shim:{
 		"cookie":{
 			deps:["jquery"]	
 		},
 		"bootstrap":{
+			deps:["jquery"]	
+		},
+		"validate":{
+			deps:["jquery"]	
+		},
+		"demo":{
 			deps:["jquery"]	
 		},
 	}
