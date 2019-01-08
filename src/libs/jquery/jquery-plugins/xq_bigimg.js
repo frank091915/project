@@ -1,4 +1,4 @@
-	(function ($) {
+;(function ($) {
 		var XQ_bigimg=function(xq_big){
 			var self=this;
 			this.xq_big =xq_big;
@@ -10,7 +10,7 @@
 			this.setting={
 				"pwidth"	: 	300,
 				"pheight"	: 	200,
-				"scale"		: 	3,
+				"scale"		: 	1.8,
 				"margin_top"	: 50,
 				"margin_left" 	: 50,
 				"pclass"		: ""
