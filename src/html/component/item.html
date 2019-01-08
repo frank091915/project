@@ -1,0 +1,15 @@
+<ul>
+	
+	<script type="text/html" id="list-temp">
+		{{each list item i}}
+		<li>
+			<div class="img-wraper">
+			<a href="/html/component/productInfo.html?id={{item.id}}"><img src="{{item.img}}"/></a>
+			</div>
+			<p>{{item.title}}</p>
+			<p>{{item.price}}</p>
+		</li>
+	
+		{{/each}}
+	</script>
+</ul>

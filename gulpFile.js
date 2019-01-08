@@ -72,7 +72,12 @@ gulp.task("libs",function(){
 	.pipe(gulp.dest("dist/libs"))
 	.pipe(connect.reload())
 })
+gulp.task("api",function(){
+	gulp.src("src/api/**/*")
+	.pipe(gulp.dest("dist/api"))
+	.pipe(connect.reload())
+})
 
 //任务全部执行
-gulp.task("default",["js","html","server","watch","font","css","libs","static"]);
+gulp.task("default",["js","html","server","watch","font","css","libs","static","api"]);
 //！！！如果，相关js模块有语法错误，gulp不能成功对该模块进行操作

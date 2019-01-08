@@ -8,7 +8,12 @@ require.config({
 		"footer":"/js/component/footer",
 		"bootstrap":"/libs/bootstrap/js/bootstrap",
 		"demo":"/libs/jquery/jquery-plugins/demo",
-		"validate":"/libs/jquery/jquery-plugins/validate-1.14.0.min"
+		"validate":"/libs/jquery/jquery-plugins/validate-1.14.0.min",
+		"lunbo":"/js/component/lunbo",
+		"item":"/js/component/item",
+		"url":"/js/component/url",
+		"template":"/libs/template-web",
+		"fdj":"/libs/jquery/jquery-plugins/xq_bigimg"
 	},
 	shim:{
 		"cookie":{
@@ -23,5 +28,8 @@ require.config({
 		"demo":{
 			deps:["jquery"]	
 		},
+		"fdj":{
+			deps:["jquery"]
+		}
 	}
 })

@@ -1,6 +1,29 @@
 require(["../require-config"],function(){
 	require(["jquery","header","footer","bootstrap","validate","demo"],function(){
 		$('#myModal').modal();
+		//表单提交时间
+		$("#demo").on("submit",function(e){
+			//首先阻止默认事件
+			e.preventDefault();
+			$.ajax({
+				url:"http://localhost/api/v1/register.php",
+				type:"post",
+				data:{
+					username:$("#username").val(),
+					password:$("#password").val()
+				},
+				success:function(res){
+					if(res.res_code===1){
+						if(confirm("注册成功，去登陆")){
+							window.location.href="/html/component/signIn.html";
+						}
+					}else{
+							alert(res.res_massage);
+						}
+				},
+				dataType:"json"
+			});
+		})
 		
 	})
 })

@@ -2,7 +2,7 @@
 //首先引入config
 //每个模块有自己的业务逻辑
 require(["./require-config"],function(){
-	require(["jquery","header","footer"],function(){
+	require(["jquery","header","footer","lunbo"],function(){
 		
 	})
 })

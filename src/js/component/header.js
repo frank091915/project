@@ -1,4 +1,4 @@
-define(["jquery"],function(){
+define(["jquery","cookie"],function(){
 	class Header{
 		constructor(){
 			this.init();
@@ -20,6 +20,7 @@ define(["jquery"],function(){
 
 		}
 		show(){
+			this.hello();
 			$("#show-ul").hide();
 			$("#header-form").on("submit",function(e){
 					e.preventDefault();
@@ -46,6 +47,11 @@ define(["jquery"],function(){
 					//点击完以后，让ul消失
 					$("#show-ul").hide("slow");
 				})
+		}
+		hello(){
+			if($.cookie("userinfo")){
+				$("#hello").html(JSON.parse($.cookie("userinfo")).name);
+			}
 		}
 		
 		
