@@ -10,7 +10,7 @@ define(["jquery","cookie"],function(){
 				$(".hide_wraper").hide();
 				let li=$(".header_wraper2 ul li");
 				li.hover(function(e){
-					$(this).children(".hide_wraper").stop().show("slow");
+					$(this).children(".hide_wraper").stop().show("slow").css({"position":"absolute","top":25});
 				},
 					function(){
 						$(this).children(".hide_wraper").stop().hide("slow");

@@ -13,7 +13,8 @@ require.config({
 		"item":"/js/component/item",
 		"url":"/js/component/url",
 		"template":"/libs/template-web",
-		"fdj":"/libs/jquery/jquery-plugins/xq_bigimg"
+		"fdj":"/libs/jquery/jquery-plugins/xq_bigimg",
+		"addCart":"/js/component/addCart"
 	},
 	shim:{
 		"cookie":{
