@@ -1,0 +1,19 @@
+
+	<script type="text/html" id="cartModle-temp">
+		{{each list item i}}	
+		<!--模板-->
+
+		<div class="review-info-wraper">
+			<div class=" cart-img"><a href="javascript:;"><img src="{{item.src}}"/></a></div>
+			<div class=" "><span class="review-info-name">{{item.title}}</span></div>
+			<div class=" cart-price"><span class="review-info-price">¥&nbsp;{{item.price}}</span></div>
+			<div class=" cart-amount"><input type="text" class="cart-quantity-box-number" value="{{item.amount}}"/> </div>
+			<div class=""><span class="review-info-price">¥&nbsp;399.00</span></div>
+			<div><input  class="singleCheck" type="checkbox"/></div>
+			<div><span class="delete-btn">删除</span></div>
+		</div>
+		
+		{{/each}}
+	</script>
+
+

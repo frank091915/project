@@ -15,6 +15,7 @@ require.config({
 		"template":"/libs/template-web",
 		"fdj":"/libs/jquery/jquery-plugins/xq_bigimg",
 		"addCart":"/js/component/addCart",
+		"cartModle":"/js/component/cartModle",
 		"payModle":"/js/component/payModle"
 	},
 	shim:{
