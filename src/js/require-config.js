@@ -16,7 +16,8 @@ require.config({
 		"fdj":"/libs/jquery/jquery-plugins/xq_bigimg",
 		"addCart":"/js/component/addCart",
 		"cartModle":"/js/component/cartModle",
-		"payModle":"/js/component/payModle"
+		"payModle":"/js/component/payModle",
+		"sum":"/js/component/sum"
 	},
 	shim:{
 		"cookie":{

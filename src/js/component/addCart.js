@@ -62,7 +62,7 @@ define(["jquery","cookie"],function($){
 //			console.log(JSON.parse($.cookie("cart")));
 			//添加以后，提醒用户
 			if(confirm("添加成功，去结算？")){
-				window.location.href="/html/component/pay.html";
+				window.location.href="/html/component/cart.html";
 			}
 		
 			
