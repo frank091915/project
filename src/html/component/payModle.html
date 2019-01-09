@@ -1,0 +1,18 @@
+
+	<script type="text/html" id="payModle-temp">
+		{{each list item i}}	
+		<!--模板-->
+
+		<div class="review-info-wraper">
+			<div class="review-info-cell"><a href="javascript:;"><img src="{{item.src}}"/></a></div>
+			<div class="review-info-cell"><span class="review-info-name">{{item.title}}</span></div>
+			<div class="review-info-cell"><span class="review-info-price">{{item.price}}</span></div>
+			<div class="review-info-cell"><span class="cart-quantity-box-number">{{item.amount}}</span></div>
+			<div class="review-info-cell"><span class="review-info-price">¥&nbsp;399.00</span></div>
+			<div class="review-info-cell"><input type="checkbox" /></div>
+		</div>
+		
+		{{/each}}
+	</script>
+
+
