@@ -15,7 +15,9 @@ define(["jquery","cookie"],function(){
 					function(){
 						$(this).children(".hide_wraper").stop().hide("slow");
 					});
-					_this.show()	//！！！在插入header后执行这个方法,需要等header渲染完成以后才进行相关操作
+					
+					_this.cart();
+					_this.show();	//！！！在插入header后执行这个方法,需要等header渲染完成以后才进行相关操作
 					_this.cart();
 					_this.scroll();
 			});
@@ -73,6 +75,14 @@ define(["jquery","cookie"],function(){
 					$("header").css({"position":"relative"});
 				}
 			})
+		}
+		cart(){
+					//购物车的数量
+					let cartAmount=0;
+					$(JSON.parse($.cookie("cart"))).each(function(){
+						cartAmount++;
+					});
+					$("#cart-amount").html(cartAmount);
 		}
 		
 		

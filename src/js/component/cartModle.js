@@ -1,4 +1,4 @@
-define(["jquery","template","sum"],function($,tem,sum){
+define(["jquery","template","sum","header"],function($,tem,sum,header){
 	function Item(){
 		
 	}
@@ -81,6 +81,8 @@ define(["jquery","template","sum"],function($,tem,sum){
 				console.log(JSON.parse($.cookie("cart")));
 				sum.init("cart");
 				
+				//修改cookie后，购物车数量也需要修改
+				header.cart();
 			});
 			//改变数量
 			$(".cart-quantity-box-number").change(function(){
