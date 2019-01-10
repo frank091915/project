@@ -11,6 +11,7 @@ define(["jquery","cookie"],function($){
 			let checked=$("#"+item.id).parent().prev().children().prop("checked");
 			if(checked){
 				totals+=Number(item.price)*Number(item.amount);
+				console.log(item.amount);
 			}
 		});
 //		console.log(totals);

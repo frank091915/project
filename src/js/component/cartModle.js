@@ -85,7 +85,7 @@ define(["jquery","template","sum"],function($,tem,sum){
 			//改变数量
 			$(".cart-quantity-box-number").change(function(){
 				let _this=this;
-				let changeId= $(this).parent().next().next().next().children().prop("id");
+				let changeId= $(this).parent().next().next().children().prop("id");
 					console.log(changeId);
 				let cartCookie =JSON.parse($.cookie("cart"));
 				//修改cookie

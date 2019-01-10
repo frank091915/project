@@ -31,6 +31,13 @@
     width: 130px;
     height: 45px;
 }
+.xd{
+    width: 100%;
+    z-index: 100;
+    .header_wraper2{
+        background-color: white;
+    }
+}
 #header_right{
     width: 550px;
     height: 60px;
@@ -149,6 +156,10 @@
     background-color: #00c8c8;
     color: white;
 }
+
+
+
+
 .header_right4 .acUl{
     position: absolute;
     top: 25px;
@@ -198,7 +209,7 @@
     width: 160px!important;
     color:#ababab ;
     position: absolute;
-    top: 95px;
+    top: 95px!important;
     z-index: 10;
     background-color: white;
 }

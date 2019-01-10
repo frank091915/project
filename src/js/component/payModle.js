@@ -34,6 +34,10 @@ define(["jquery","template","sum"],function($,tem){
 				e.preventDefault();
 			})
 			
+			
+			
+			
+			
 		})
 		
 		

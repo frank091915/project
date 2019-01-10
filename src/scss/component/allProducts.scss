@@ -57,6 +57,14 @@
     line-height: 45px;
     font-weight: 500;
 }
+#list-template p:hover{
+    color: hotpink;
+    cursor: pointer;
+}
+ul li:hover a{
+    color: hotpink;
+        cursor: pointer;
+}
 .category-content{
     height: 390px;
     li{

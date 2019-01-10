@@ -17,6 +17,7 @@ define(["jquery","cookie"],function(){
 					});
 					_this.show()	//！！！在插入header后执行这个方法,需要等header渲染完成以后才进行相关操作
 					_this.cart();
+					_this.scroll();
 			});
 
 		}
@@ -60,6 +61,16 @@ define(["jquery","cookie"],function(){
 					location.href="/html/component/cart.html";	
 				}else{
 					alert("小老弟，啥都还没选呢");
+				}
+			})
+		}
+		scroll(){
+			$(window).on("scroll",function(){
+				if($(this).prop("scrollY")>157){
+					$("header").css({"position":"fixed","top":0}).addClass("xd");
+
+				}else{
+					$("header").css({"position":"relative"});
 				}
 			})
 		}
