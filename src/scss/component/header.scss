@@ -32,11 +32,11 @@
     height: 45px;
 }
 #header_right{
-    width: 450px;
+    width: 550px;
     height: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     float: right;
     color: white;
@@ -94,31 +94,40 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    width: 146px;
+    width: 255px;
     height: 25px;
     font-size: 14px;
+    margin-left:5px ;
+}
+.header_right4 form{
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 255px;
 }
 .header_right4 #header-form .search{
-    width: 83px;
+    flex: 1;
     height: 25px;
     font-size: 13px;
     line-height: 25px;
     text-align: center;
-
+    border: none;
 }
 .header_right4 #header-form button{
     width: 40px;
     height: 25px;
     font-size: 13px;
     line-height: 25px;
-
     margin-left:0 ;
 }
 .header_right4 #header-form ul{
     position: absolute;
     top:25px ;
+    left: 0;
     background: #fff;
     border: 1px solid #ccc;
     overflow: hidden;
@@ -130,11 +139,22 @@
     margin-bottom: 2px;
 }
 .header_right4 ul li:hover{
-    background-color: #ababab;
+    background-color: #00c8c8;
+    border-bottom: 1px solid white;
 }
-.header_right4 .ac{
+.header_right4 ul{
+    background-color: #00c8c8;
+}
+.header_right4 button:hover{
+    background-color: #00c8c8;
+    color: white;
+}
+.header_right4 .acUl{
+    position: absolute;
+    top: 25px;
     z-index: 18;
     font-size: 15px;
+    width: 215px;
 }
 /*下头部*/
 .header_wraper2{

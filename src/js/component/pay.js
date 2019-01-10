@@ -4,6 +4,7 @@ require(["../require-config"],function(){
 		//操作按钮
 		//全选按钮
 		let allCheck=$("#allCheck");
+		
 
 		
 		

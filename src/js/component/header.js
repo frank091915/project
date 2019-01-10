@@ -16,6 +16,7 @@ define(["jquery","cookie"],function(){
 						$(this).children(".hide_wraper").stop().hide("slow");
 					});
 					_this.show()	//！！！在插入header后执行这个方法,需要等header渲染完成以后才进行相关操作
+					_this.cart();
 			});
 
 		}
@@ -30,7 +31,7 @@ define(["jquery","cookie"],function(){
 					$.getJSON("https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?cb=?&"+str,
 					function(res){
 						var content=res.s;
-						$("#show-ul").empty().show().addClass("ac");
+						$("#show-ul").empty().show().addClass("acUl");
 						content.forEach(function(item,i){
 							$("<li>").html(item).addClass("li").appendTo($("#show-ul"));
 						})
@@ -43,7 +44,7 @@ define(["jquery","cookie"],function(){
 				//给li添加点击事件
 				$("#show-ul").on("click","li",function(){
 					//给input赋值
-					$("input").val($(this).html());
+					$("#header-search").val($(this).html());
 					//点击完以后，让ul消失
 					$("#show-ul").hide("slow");
 				})
@@ -52,6 +53,15 @@ define(["jquery","cookie"],function(){
 			if($.cookie("userinfo")){
 				$("#hello").html(JSON.parse($.cookie("userinfo")).name);
 			}
+		}
+		cart(){
+			$("#header-cartEntry").on("click",function(){
+				if($.cookie("cart")){
+					location.href="/html/component/cart.html";	
+				}else{
+					alert("小老弟，啥都还没选呢");
+				}
+			})
 		}
 		
 		
