@@ -33,6 +33,14 @@ define(["jquery","template","sum"],function($,tem){
 			$("#pay-btn").on("click",function(e){
 				e.preventDefault();
 			})
+			//小计
+			let smallSum=$(".small-sum");
+			smallSum.each(function(i,item){
+				let amount= $(item).parent().prev().children().html();
+				let price=$(item).parent().prev().prev().children().html().slice(7);
+				console.log(amount,price);
+				$(this).html("¥&nbsp;" +(amount*price).toFixed(2));
+			});
 			
 			
 			

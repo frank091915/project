@@ -16,7 +16,7 @@ define(["jquery","cookie"],function(){
 						$(this).children(".hide_wraper").stop().hide("slow");
 					});
 					
-					_this.cart();
+					_this.hello();
 					_this.show();	//！！！在插入header后执行这个方法,需要等header渲染完成以后才进行相关操作
 					_this.cart();
 					_this.scroll();
@@ -54,6 +54,7 @@ define(["jquery","cookie"],function(){
 		}
 		hello(){
 			if($.cookie("userinfo")){
+				console.log(JSON.parse($.cookie("userinfo")).name);
 				$("#hello").html(JSON.parse($.cookie("userinfo")).name);
 			}
 		}
