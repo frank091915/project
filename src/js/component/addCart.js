@@ -1,4 +1,4 @@
-define(["jquery","cookie"],function($){
+define(["jquery","header","cookie"],function($,header){
 	function AddCart(){
 
 	}
@@ -61,6 +61,7 @@ define(["jquery","cookie"],function($){
 			$.cookie("cart",JSON.stringify(cart_arr),{path:"/"});
 //			console.log(JSON.parse($.cookie("cart")));
 			//添加以后，提醒用户
+			header.cart();
 			if(confirm("添加成功，去结算？")){
 				window.location.href="/html/component/cart.html";
 			}
